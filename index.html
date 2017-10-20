@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0">
+    <title></title>
+
+    <link type="text/css" rel="stylesheet" href="Content/css/common.css">
+    <link type="text/css" rel="stylesheet" href="Content/css/ionic.min.css">
+    <link type="text/css" rel="stylesheet" href="Content/css/iconfont.css">
+    <link type="text/css" rel="stylesheet" href="Content/css/reset.css">
+
+    <link type="text/css" rel="stylesheet" href="Content/css/style.css">
+
+</head>
+<body ng-app="myApp">
+    <header class="header bar bar-header bar-light">
+        <h1 class="title">
+            <a ng-href="#/page/server" class="active">服务</a>
+            <a ng-href="#/page/price">金融</a>
+        </h1>
+    </header>
+
+    <ion-view view-title="活动页">
+        <ion-content class="padding">
+    <section class="section mt35">
+        <div class="banner1" ng-controller="slideController">
+            <ion-slide-box active-slide="myActiveSlide">
+                <ion-slide>
+                    <div class="box banner"><img src="Content/images/banner_02.jpg"></div>
+                </ion-slide>
+                <ion-slide>
+                    <div class="box banner"><img src="Content/images/banner_02.jpg"></div>
+                </ion-slide>
+                <ion-slide>
+                    <div class="box banner"><img src="Content/images/banner_02.jpg"></div>
+                </ion-slide>
+            </ion-slide-box>
+        </div>
+        <div class="icon row">
+            <dl class="col">
+                <dt class="assertive-bg"><i class="icon ion-ios-copy"></i></dt>
+                <dd>车商城</dd>
+            </dl>
+            <dl class="col">
+                <dt class="energized-bg"><i class="icon ion-chatbox"></i></dt>
+                <dd>分期购物</dd>
+            </dl>
+            <dl class="col">
+                <dt class="assertive-bg"><i class="icon ion-social-apple"></i></dt>
+                <dd>团购活动</dd>
+            </dl>
+            <dl class="col">
+                <dt class="positive-bg"><i class="icon ion-social-designernews"></i></dt>
+                <dd>找二手车</dd>
+            </dl>
+        </div>
+        <div class="ban">
+            <img src="Content/images/banner_2_04.jpg" alt="">
+        </div>
+        <div class="main">
+            <h5 class="pl10">车主服务</h5>
+            <div class="ser">
+                <dl>
+                    <dt><i class="icon ion-flash"></i></dt>
+                    <dd>油卡充值</dd>
+                </dl>
+                <dl>
+                    <dt><i class="icon ion-android-more-vertical"></i></dt>
+                    <dd>低价保险</dd>
+                </dl>
+                <dl>
+                    <dt><i class="icon ion-ios-star"></i></dt>
+                    <dd>4s店保养</dd>
+                </dl>
+                <dl>
+                    <dt><i class="icon ion-social-whatsapp"></i></dt>
+                    <dd>品质轮胎</dd>
+                </dl>
+                <dl>
+                    <dt><i class="icon ion-outlet"></i></dt>
+                    <dd>车品商城</dd>
+                </dl>
+                <dl>
+                    <dt><i class="icon ion-chatbubble"></i></dt>
+                    <dd>洗车</dd>
+                </dl>
+                <dl>
+                    <dt><i class="icon ion-happy"></i></dt>
+                    <dd>违章代缴</dd>
+                </dl>
+                <dl>
+                    <dt><i class="icon ion-paperclip"></i></dt>
+                    <dd>免费测试</dd>
+                </dl>
+                <dl>
+                    <dt><i class="icon ion-search"></i></dt>
+                    <dd>查周边</dd>
+                </dl>
+                <dl>
+                    <dt><i class="icon ion-card"></i></dt>
+                    <dd>车主卡</dd>
+                </dl>
+                <dl>
+                    <dt><i class="icon ion-pricetags"></i></dt>
+                    <dd>领券保养</dd>
+                </dl>
+                <dl>
+                    <dt><i class="icon ion-merge"></i></dt>
+                    <dd>全部</dd>
+                </dl>
+            </div>
+        </div>
+        <div class="shop">
+            <h6 class="pl10">限时抢购</h6>
+            <div class="banner2" ng-controller="slideController">
+                <ion-slide-box active-slide="myActiveSlide">
+                    <ion-slide>
+                        <div class="box banner"><img src="Content/images/lubo_07.jpg"></div>
+                        <div class="box banner"><img src="Content/images/lubo_09.jpg"></div>
+                    </ion-slide>
+                    <ion-slide>
+                        <div class="box banner"><img src="Content/images/lubo_07.jpg"></div>
+                        <div class="box banner"><img src="Content/images/lubo_09.jpg"></div>
+                    </ion-slide>
+                    <ion-slide>
+                        <div class="box banner"><img src="Content/images/lubo_07.jpg"></div>
+                        <div class="box banner"><img src="Content/images/lubo_09.jpg"></div>
+                    </ion-slide>
+                    <ion-slide>
+                        <div class="box banner"><img src="Content/images/lubo_07.jpg"></div>
+                        <div class="box banner"><img src="Content/images/lubo_09.jpg"></div>
+                    </ion-slide>
+                </ion-slide-box>
+            </div>
+        </div>
+        <div class="finnal">
+            <h6>猜你喜欢 <a class="pull-right">更多</a></h6>
+            <ui-view></ui-view>
+        </div>
+
+    </section>
+        </ion-content>
+    </ion-view>pp
+    <footer class="footer">
+        <div class="tabs tabs-icon-only">
+            <a class="tab-item" href="#">
+                <i class="icon ion-home"></i>
+                <span>首页</span>
+            </a>
+            <a class="tab-item" href="#">
+                <i class="icon ion-star"></i>
+                <span>论坛</span>
+            </a>
+            <a class="tab-item" href="#">
+                <i class="icon ion-gear-a"></i>
+                <span>选车</span>
+            </a>
+            <a class="tab-item" href="#">
+                <i class="icon ion-help-buoy"></i>
+                <span>发现</span>
+            </a>
+            <a class="tab-item" href="#">
+                <i class="icon ion-ionic"></i>
+                <span>未登录</span>
+            </a>
+        </div>
+    </footer>
+
+    <script type="text/javascript" src="Script/ionic/ionic.bundle.min.js"></script>
+    <script type="text/javascript" src="Script/jquery/jquery.min.js"></script>
+    <script type="text/javascript" src="Script/angular/angular.min.js"></script>
+    <script type="text/javascript" src="Script/angular-ui/angular-ui-router.min.js"></script>
+    <script type="text/javascript" src="App/app.js"></script>
+
+    <script type="text/javascript" src="App/Service/baseServer.js"></script>
+    <script type="text/javascript" src="App/Service/pageServer.js"></script>
+
+    <script type="text/javascript" src="App/Controller/pageController.js"></script>
+    <script type="text/javascript" src="App/Controller/slideController.js"></script>
+    <script type="text/javascript" src="App/Directive/pageDirective.js"></script>
+</body>
+</html>

@@ -1,0 +1,13 @@
+
+        <div class="page">
+            <dl ng-repeat="i in items">
+                <dt><img ng-src="{{i.image}}" alt=""></dt>
+                <dd>
+                    <p>{{i.name}}</p>
+                    <span>{{i.content}}</span>
+                    <b>{{i.price}}</b>
+                </dd>
+            </dl>
+            <ion-infinite-scroll ng-if="vm.moredata" on-infinite="vm.loadMore()" distance="1%" ></ion-infinite-scroll>
+        </div>
+        <ion-infinite-scroll ng-if="vm.moredata" on-infinite="vm.loadMore()" distance="1%" >加载更多</ion-infinite-scroll>

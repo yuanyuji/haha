@@ -1,0 +1,86 @@
+header h1.title a.active {
+  color: #474747;
+  border-bottom: 2px solid #474747; }
+
+.section .banner1 .slider .banner {
+  width: 100%; }
+  .section .banner1 .slider .banner img {
+    width: 100%; }
+.section .icon dl.col {
+  text-align: center; }
+  .section .icon dl.col dt {
+    margin-left: auto;
+    margin-right: auto;
+    line-height: 34px;
+    text-align: center;
+    border-radius: 100%/80%;
+    font-size: 23px;
+    height: 38px;
+    width: 38px; }
+    .section .icon dl.col dt i {
+      color: #fff;
+      vertical-align: middle; }
+  .section .icon dl.col dd {
+    color: #757575;
+    line-height: 30px; }
+.section .ban {
+  width: 100%; }
+  .section .ban img {
+    width: 100%; }
+.section .main h5 {
+  line-height: 40px; }
+.section .main .ser {
+  display: flex;
+  padding-left: 5px;
+  padding-right: 5px;
+  flex-wrap: wrap; }
+  .section .main .ser dl {
+    flex-basis: 24%;
+    text-align: center;
+    justify-content: space-around; }
+    .section .main .ser dl dt {
+      margin-left: auto;
+      margin-right: auto;
+      text-align: center;
+      border-radius: 100%; }
+      .section .main .ser dl dt i {
+        color: #7e7e7e;
+        font-size: 30px;
+        vertical-align: middle; }
+    .section .main .ser dl dd {
+      color: #7e7e7e; }
+.section .shop h6 {
+  line-height: 40px; }
+.section .shop .banner2 .slider .banner {
+  padding-left: 10px;
+  float: left;
+  width: 40%; }
+  .section .shop .banner2 .slider .banner img {
+    width: 100%; }
+.section .shop .banner2 .slider-pager {
+  display: none; }
+.section .finnal h6 {
+  line-height: 40px;
+  padding-right: 20px;
+  padding-left: 5px; }
+  .section .finnal h6 a {
+    float: right; }
+.section .finnal .page {
+  display: flex;
+  flex-wrap: wrap;
+  padding-left: 5px;
+  padding-right: 5px; }
+  .section .finnal .page dl {
+    flex: 48%; }
+
+.footer {
+  font-size: 12px; }
+  .footer div.tabs.tabs-icon-only {
+    height: 44px;
+    line-height: 0.2rem; }
+    .footer div.tabs.tabs-icon-only a i.icon {
+      font-size: 20px; }
+    .footer div.tabs.tabs-icon-only a:hover {
+      color: #4183ff; }
+
+/*# sourceMappingURL=style.css.map */
